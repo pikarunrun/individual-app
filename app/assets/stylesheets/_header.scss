@@ -1,0 +1,12 @@
+.top {
+  &__box {
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    margin: 0 auto;
+    background-color: red;
+    color: black;
+    font-size: 90px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+  background-color: #9ff;
+  &__top {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    line-height: 150px;
+    font-size: 14px;
+    &--left {
+
+    }
+    &--center {
+      margin: 0 100px;
+    }
+    &--right {
+
+    }
+  }
+}
+
+.child {
+  &__box {
+    height: 80px;
+    text-align: center;
+    background-color: #eee;
+    color: black;
+    font-size: 12px;
+    line-height: 80px;
+
+  }
+}
+
+.grandchild {
+  &__box {
+    text-align: center;
+    height: 50px;
+    color: skyblue;
+    font-size: 10px;
+    line-height: 50px;
+  }
+}
