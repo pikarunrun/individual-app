@@ -3,6 +3,57 @@
 }
 
 .main{
-  height: 1000px;
-  background: blue;
+  margin: 20px 200px;
+  height: 900px;
+  border: solid 2px #eee;
+  margin-top: 20px;
+  &__toko {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding-top: 20px;
+    
+  }
+  &__stripe {
+    width: 900px;
+    height: 5px;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  &__text {
+    height: 160px;
+    width: 900px;
+    display: flex;
+    &__image {
+      height: 200px;
+      width: 300px;
+      margin-left: 60px;
+      img {
+        height: 160px;
+        width: 260px;
+      }
+    }
+    &__title {
+      &__box {
+        font-size: 24px;
+        a {
+          color: black;
+        }
+      }
+      &__text {
+        font-size: 16px;
+      }
+      &__name{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.page {
+  text-align: center;
+  margin-bottom: 20px;
 }

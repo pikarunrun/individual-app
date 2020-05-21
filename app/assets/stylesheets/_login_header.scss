@@ -1,0 +1,40 @@
+.login {
+  &__box {
+    height: 160px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: red;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    background-image: image-url('IMG_6268.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    a {
+      color: white;
+    }
+    &__main {
+      display: flex;
+      position: relative;
+      &--left {
+        position: absolute;
+        right: 300px;
+        font-size: 22px;
+        top: 50px;
+      }
+      &--center {
+        top: 50px;
+        font-size: 22px;
+        position: absolute;
+        right: 180px;
+      }
+      &--right {
+        top: 50px;
+        font-size: 22px;
+        position: absolute;
+        right: 60px;
+      }
+    }
+  }
+}

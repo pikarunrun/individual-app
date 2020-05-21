@@ -1,0 +1,35 @@
+= render "header"
+.show
+  .show__stripe
+  .show__text
+    .show__text__image 
+      = image_tag @post.images.first.image.url(:medium)
+    .show__text__title 
+      .show__text__title__box
+        = @post.title
+      .show__text__title__name
+        = @post.user.nickname
+        = @post.created_at
+  .show__edit
+    - if user_signed_in? && current_user.id == @post.user_id
+      .show__edit--edit
+        = link_to '編集', edit_post_path(@post.id)
+      .show__edit--des
+        = link_to '削除', post_path(@post.id), method: :delete
+  .show__content 
+    = simple_format @post.text
+
+
+
+
+-# .comment
+-#   - if current_user
+-#     = form_for [@post, @comment] do |f| 
+-#       = f.text_area :comment, class: 'comment-area', placeholder: "コメントする", rows: "5"
+-#       = f.submit "SEND", class: 'comment-submit' 
+-#   .comment__comments
+-#     <コメント一覧>
+-#     - if @comments
+-#       - @comments.each do |comment|
+-#         = link_to comment.user.nickname
+-#         = comment.comment

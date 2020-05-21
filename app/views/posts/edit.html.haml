@@ -1,0 +1,8 @@
+= render "login_header"
+.edit 
+  .edit__box 
+    投稿の編集
+  = form_for @post,html: { class: "edit__box-big" } do |f|
+    = f.text_field :title, class: 'edit__box-big-title', placeholder: "タイトル"
+    = f.text_area :text, class: 'edit__box-big-area', placeholder: "ブログの本文", rows: 10
+    = f.submit '編集完了', class: 'edit__box-big-submit' 

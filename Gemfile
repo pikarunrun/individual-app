@@ -61,3 +61,9 @@ group :production do
   gem 'pg'
 end
 gem 'rails_12factor', group: :production
+gem 'pry-rails'
+gem 'rb-readline'
+gem 'kaminari'
+gem 'carrierwave'
+gem 'gretel'
+gem 'mini_magick'

@@ -1,0 +1,900 @@
+/*!
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* http://cssreset.com
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+/*
+   TODO will need to remove settings on HTML since we can't namespace it.
+   TODO with the prefix, should I group by selector or property for weight savings?
+*/
+/* line 11, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+/* line 22, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+   TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 61, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 73, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 77, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 81, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 90, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 94, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 100, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 103, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 106, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+/* line 114, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+/* line 120, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+/* line 124, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_reset.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/* line 1, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+* {
+  text-decoration: none;
+}
+
+/* line 5, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main {
+  margin: 20px 200px;
+  height: 900px;
+  border: solid 2px #eee;
+  margin-top: 20px;
+}
+/* line 10, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__toko {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding-top: 20px;
+}
+/* line 17, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__stripe {
+  width: 900px;
+  height: 5px;
+  background-color: #eee;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text {
+  height: 160px;
+  width: 900px;
+  display: flex;
+}
+/* line 30, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text__image {
+  height: 200px;
+  width: 300px;
+  margin-left: 60px;
+}
+/* line 36, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text__title__box {
+  font-size: 24px;
+}
+/* line 38, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text__title__box a {
+  color: black;
+}
+/* line 42, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text__title__text {
+  font-size: 16px;
+}
+/* line 45, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.main__text__title__name {
+  font-size: 12px;
+}
+
+/* line 52, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/posts.scss */
+.page {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 2, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_header.scss */
+.top__box {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin: 0 auto;
+  background-color: red;
+  color: black;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+/* line 2, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box {
+  height: 160px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: red;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url(/assets/IMG_6268-505eae6d76e534385c1f3df9fb10add23f87df101dfb9e8b1f7d1885d1a317bd.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+}
+/* line 14, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box a {
+  color: white;
+}
+/* line 17, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box__main {
+  display: flex;
+  position: relative;
+}
+/* line 20, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box__main--left {
+  position: absolute;
+  right: 300px;
+  font-size: 22px;
+  top: 50px;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box__main--center {
+  top: 50px;
+  font-size: 22px;
+  position: absolute;
+  right: 180px;
+}
+/* line 32, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_login_header.scss */
+.login__box__main--right {
+  top: 50px;
+  font-size: 22px;
+  position: absolute;
+  right: 60px;
+}
+
+/* line 2, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_no_login_header.scss */
+.nologin__box {
+  height: 160px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: red;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url(/assets/IMG_6268-505eae6d76e534385c1f3df9fb10add23f87df101dfb9e8b1f7d1885d1a317bd.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+}
+/* line 14, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_no_login_header.scss */
+.nologin__box a {
+  color: white;
+}
+/* line 17, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_no_login_header.scss */
+.nologin__box__main {
+  display: flex;
+  position: relative;
+}
+/* line 20, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_no_login_header.scss */
+.nologin__box__main--left {
+  position: absolute;
+  right: 180px;
+  font-size: 22px;
+  top: 50px;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_no_login_header.scss */
+.nologin__box__main--right {
+  top: 50px;
+  font-size: 22px;
+  position: absolute;
+  right: 60px;
+}
+
+/* line 1, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_footer.scss */
+.footer {
+  background-color: #9ff;
+}
+/* line 3, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_footer.scss */
+.footer__top {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  line-height: 150px;
+  font-size: 14px;
+}
+/* line 13, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_footer.scss */
+.footer__top--center {
+  margin: 0 100px;
+}
+
+/* line 23, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_footer.scss */
+.child__box {
+  height: 80px;
+  text-align: center;
+  background-color: #eee;
+  color: black;
+  font-size: 12px;
+  line-height: 80px;
+}
+
+/* line 35, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_footer.scss */
+.grandchild__box {
+  text-align: center;
+  height: 50px;
+  color: skyblue;
+  font-size: 10px;
+  line-height: 50px;
+}
+
+/* line 2, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__inner {
+  width: 980px;
+  margin: 60px auto;
+  padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* line 10, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+  float: left;
+  width: 50%;
+}
+/* line 14, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__inner:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 22, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__header h2 {
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-weight: 200;
+}
+/* line 28, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__header h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  margin-top: 5px;
+  border-bottom: 1px solid #38aef0;
+}
+/* line 37, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__header h5 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* line 43, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .account-page__header .btn {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 14px;
+}
+/* line 51, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field {
+  margin-bottom: 10px;
+}
+/* line 54, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field .field-label {
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* line 60, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field .field-label i {
+  font-size: 11px;
+}
+/* line 66, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field .field-input input {
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+/* line 74, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .btn {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+}
+/* line 85, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page input[type='submit'] {
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #38aef0;
+}
+/* line 93, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field-label .field_with_errors {
+  display: inline-block;
+  color: #d65f4c;
+  font-weight: 400;
+}
+/* line 101, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field-input .field_with_errors {
+  position: relative;
+}
+/* line 104, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+.account-page .field-input .field_with_errors:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #d65f4c;
+}
+
+/* line 118, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+/* line 124, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+#error_explanation h2 {
+  margin-bottom: 10px;
+  color: #d65f4c;
+  font-size: 14px;
+}
+/* line 130, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+#error_explanation ul {
+  margin: 0;
+  padding-left: 17px;
+  list-style: square;
+}
+/* line 136, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_in.scss */
+#error_explanation li {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+/* line 2, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__inner {
+  width: 980px;
+  margin: 60px auto;
+  padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* line 10, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+  float: left;
+  width: 50%;
+}
+/* line 14, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__inner:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 22, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__header h2 {
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-weight: 200;
+}
+/* line 28, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__header h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  margin-top: 5px;
+  border-bottom: 1px solid #38aef0;
+}
+/* line 37, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__header h5 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* line 43, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .account-page__header .btn {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 14px;
+}
+/* line 51, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field {
+  margin-bottom: 10px;
+}
+/* line 54, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field .field-label {
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* line 60, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field .field-label i {
+  font-size: 11px;
+}
+/* line 66, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field .field-input input {
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+/* line 74, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .btn {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+}
+/* line 85, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page input[type='submit'] {
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #38aef0;
+}
+/* line 93, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field-label .field_with_errors {
+  display: inline-block;
+  color: #d65f4c;
+  font-weight: 400;
+}
+/* line 101, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field-input .field_with_errors {
+  position: relative;
+}
+/* line 104, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+.account-page .field-input .field_with_errors:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #d65f4c;
+}
+
+/* line 118, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+/* line 124, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+#error_explanation h2 {
+  margin-bottom: 10px;
+  color: #d65f4c;
+  font-size: 14px;
+}
+/* line 130, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+#error_explanation ul {
+  margin: 0;
+  padding-left: 17px;
+  list-style: square;
+}
+/* line 136, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/sign_up.scss */
+#error_explanation li {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+/* line 1, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new {
+  background-color: gray;
+  color: #ffffff;
+  line-height: 2;
+  position: relative;
+  margin: 50px 280px;
+  text-align: center;
+  height: 600px;
+  width: 900px;
+  font-size: 30px;
+  font-family: serif;
+}
+/* line 12, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new a {
+  color: white;
+  font-size: 16px;
+}
+/* line 16, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__box {
+  height: 100px;
+}
+/* line 19, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__box-big-title {
+  height: 70px;
+  width: 850px;
+  display: block;
+  margin: 20px;
+  font-size: 25px;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__box-big-area {
+  display: block;
+  width: 850px;
+  height: 300px;
+  margin: 20px;
+  font-size: 25px;
+}
+/* line 33, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__box-big-submit {
+  cursor: pointer;
+  background-color: #FFFFEE;
+  display: block;
+  margin: 35px 390px;
+  font-size: 15px;
+  width: 100px;
+}
+/* line 43, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new-text {
+  position: relative;
+  display: flex;
+  height: 75px;
+  border-bottom: solid 1px white;
+}
+/* line 48, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new-text-left {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: solid 1px white;
+}
+/* line 56, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new-text-right {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 60, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new-text-name {
+  text-align: left;
+  font-size: 14px;
+}
+/* line 64, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new-text-name_box {
+  height: 5px;
+}
+/* line 70, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 74, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__created {
+  font-size: 16px;
+}
+/* line 78, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__edit a {
+  height: 30px;
+  width: 30px;
+  border: solid 1px white;
+  padding: 3px;
+}
+/* line 85, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_new.scss */
+.new__content {
+  position: absolute;
+  text-align: left;
+  left: 0px;
+  font-size: 18px;
+}
+
+/* line 1, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show {
+  margin: 20px 200px;
+  height: 600px;
+  border: solid 2px #eee;
+  margin-top: 20px;
+}
+/* line 6, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__toko {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding-top: 20px;
+}
+/* line 13, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__stripe {
+  width: 900px;
+  height: 5px;
+  background-color: #eee;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+/* line 22, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text {
+  height: 160px;
+  width: 900px;
+  display: flex;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text__image {
+  padding-left: 70px;
+  height: 200px;
+  width: 200px;
+}
+
+/* line 33, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text__title {
+  text-align: center;
+  height: 100px;
+  margin-right: 140px;
+}
+/* line 37, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text__title__box {
+  padding-left: 100px;
+  font-size: 24px;
+}
+/* line 41, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text__title__text {
+  padding-left: 40px;
+  font-size: 14px;
+}
+/* line 45, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__text__title__name {
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+/* line 51, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__edit {
+  text-align: center;
+}
+/* line 54, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__edit a {
+  color: black;
+}
+
+/* line 59, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_show.scss */
+.show__content {
+  margin-left: 70px;
+  font-size: 20px;
+  width: 900px;
+}
+
+/* line 1, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit {
+  background-color: gray;
+  color: white;
+  line-height: 2;
+  position: relative;
+  margin: 50px 280px;
+  text-align: center;
+  height: 600px;
+  width: 900px;
+  font-size: 30px;
+  font-family: serif;
+}
+/* line 12, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit a {
+  color: white;
+  font-size: 16px;
+}
+/* line 16, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__box {
+  height: 100px;
+}
+/* line 19, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__box-big-title {
+  height: 70px;
+  width: 850px;
+  display: block;
+  margin: 20px;
+  font-size: 25px;
+}
+/* line 26, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__box-big-area {
+  display: block;
+  width: 850px;
+  height: 300px;
+  margin: 20px;
+  font-size: 25px;
+}
+/* line 33, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__box-big-submit {
+  cursor: pointer;
+  background-color: #FFFFEE;
+  display: block;
+  margin: 35px 390px;
+  font-size: 15px;
+  width: 100px;
+}
+/* line 43, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit-text {
+  position: relative;
+  display: flex;
+  height: 75px;
+  border-bottom: solid 1px white;
+}
+/* line 48, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit-text-left {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: solid 1px white;
+}
+/* line 56, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit-text-right {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 60, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit-text-name {
+  text-align: left;
+  font-size: 14px;
+}
+/* line 64, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit-text-name_box {
+  height: 5px;
+}
+/* line 70, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 74, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__created {
+  font-size: 16px;
+}
+/* line 78, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__edit a {
+  height: 30px;
+  width: 30px;
+  border: solid 1px white;
+  padding: 3px;
+}
+/* line 85, /Users/saitouhikaru/projects/individual-app/app/assets/stylesheets/_edit.scss */
+.edit__content {
+  position: absolute;
+  text-align: left;
+  left: 0px;
+  font-size: 18px;
+}

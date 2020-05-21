@@ -1,24 +1,64 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Individual-app DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- has_many :posts
+- has_many :comments
+- has_many :parts
+- has_many :images
+- has_many :types
 
-Things you may want to cover:
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|text||
+|text|text||
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :comments
 
-* Ruby version
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :tweet
+- belongs_to :user
 
-* System dependencies
+## typesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- has_many :posts
+- bilongs_to :user
+## partsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|text||
+|text|text||
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :posts
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
+### Association
+- has_many :posts
+- belongs_to :user

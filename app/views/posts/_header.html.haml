@@ -1,2 +1,4 @@
-.top
-  .top__box 筋肉に好きよ集まれ💪
+- if user_signed_in?
+  = render "login_header"
+- else
+  = render "no_login_header"

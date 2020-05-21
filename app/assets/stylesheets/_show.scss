@@ -1,0 +1,84 @@
+.show{
+  margin: 20px 200px;
+  height: 600px;
+  border: solid 2px #eee;
+  margin-top: 20px;
+  &__toko {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding-top: 20px;
+    
+  }
+  &__stripe {
+    width: 900px;
+    height: 5px;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  &__text {
+    height: 160px;
+    width: 900px;
+    display: flex;
+    &__image {
+      padding-left: 70px;
+      height: 200px;
+      width: 200px;
+      img {
+        height: 160px;
+        width: 260px;
+      }
+    }
+  }
+}
+.show__text__title{
+  text-align: center;
+  height: 100px;
+  margin-left: 140px;
+  &__box {
+    font-size: 24px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  &__name {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.show__edit {
+  justify-content: center;
+  display: flex;
+  // padding-right: 100px;
+  a {
+    color: black;
+  }
+  &--edit {
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    background: #eee;
+  }
+  &--des {
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 50px;
+    background: #eee;
+
+  }
+}
+
+.show__content {
+  margin-left: 70px;
+  font-size: 20px;
+  width: 900px;
+}

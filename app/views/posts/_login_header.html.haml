@@ -1,0 +1,12 @@
+.login
+  .login__box 
+    = link_to "筋肉に好きよ集まれ💪", root_path
+    .login__box__main
+      .login__box__main--left
+        = link_to "新規投稿", new_post_path
+      .login__box__main--center
+        -# = link_to "マイページ", user_path(@posts.ids)
+      .login__box__main--right
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+
+    

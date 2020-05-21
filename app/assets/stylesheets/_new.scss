@@ -1,0 +1,113 @@
+.new {
+  background-color: gray;
+  color: #ffffff;
+  line-height: 2;
+  position: relative;
+  margin: 50px 280px;
+  text-align: center;
+  // height: 600px;
+  width: 900px;
+  font-size: 30px;
+  font-family: serif;
+  
+  a {
+    color: white;
+    font-size: 16px;
+  }
+  &__box {
+    &-big {
+      &--text {
+        display: flex;
+        .fa {
+          color: black;
+          font-size: 30px;
+          
+        }
+      }
+      &--image {
+        margin: 0 25px;
+        height: 90px;
+        // background: pink;
+        background-color: white;
+        color: black;
+        input {
+          cursor: pointer;
+          color:black;
+          opacity: 0;
+          height: 95px;
+          width: 850px;
+        }
+      }
+      &-title {
+        height: 70px;
+        width: 850px;
+        display: block;
+        margin: 20px;
+        font-size: 25px;
+      }
+      &-area {
+        display: block;
+        width: 850px;
+        height: 300px;
+        margin: 20px;
+        font-size: 25px;
+      }
+      &-submit {
+        cursor: pointer;
+        background-color: #FFFFEE;
+        display: block;
+        margin: 35px 390px;
+        font-size: 15px;
+        width: 100px;
+      }
+    }
+  }
+  &-text{
+    position: relative;
+    display: flex;
+    height: 75px;
+    border-bottom: solid 1px white;
+    &-left {
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+      border: solid 1px white;
+    }
+    &-right {
+      font-size:  20px;
+      font-weight: bold;
+    }
+    &-name {
+      // position: absolute;
+      text-align: left;
+      font-size: 14px;
+      &_box {
+        // font-size: 0px;
+        height: 5px;
+      }
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__created {
+    font-size: 16px;
+  }
+  &__edit {
+    a {
+      height: 30px;
+      width: 30px;
+      border: solid 1px white;
+      padding: 3px;
+    }
+  }
+  &__content {
+    position: absolute;
+    text-align: left;
+    left: 0px;
+    font-size: 18px;
+  }
+}
