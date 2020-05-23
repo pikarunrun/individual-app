@@ -19,9 +19,12 @@
       &--text {
         display: flex;
         .fa {
-          color: black;
+          color: gray;
           font-size: 30px;
-          
+          position: absolute;
+          margin-left: 400px;
+          margin-top: 30px;
+          margin-bottom: 20px;
         }
       }
       &--image {

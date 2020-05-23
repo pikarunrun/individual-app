@@ -3,20 +3,12 @@
   .new__box 
     新規投稿の作成
   = form_for @post do |f|
-    .new__box-big--text 
-    = icon("fa", "camera")
     .new__box-big--image
       = f.fields_for :images do |i|
-        = i.file_field :image
+        .new__box-big--text 
+          = icon("fa", "camera")
+          = i.file_field :image
+
     = f.text_field :title, class: 'new__box-big-title', placeholder: "タイトル"
     = f.text_area :text, class: 'new__box-big-area', placeholder: "ブログの本文", rows: 10
     = f.submit '投稿する', class: 'new__box-big-submit' 
-
-
-
-  -# = f.fields_for :images do |form|
-  -#   .input-area
-  -#     = f.file_field :image
-  -#     %label{for: "img-file"}
-  -#       .text 画像を選択して下さい。
-  -#       %i.fas.fa-image

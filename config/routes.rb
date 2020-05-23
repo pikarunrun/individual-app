@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root 'posts#index'
   resources :posts do
     resources :images, only: :create
+    resources :comments, only: :create 
   end
-  resources :users, only: :show do
+  resources :users, only: :index do
   end
 end

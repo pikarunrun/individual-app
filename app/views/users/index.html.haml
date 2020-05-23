@@ -1,0 +1,38 @@
+= render '/posts/login_header'
+.userindex
+  - @posts.each do |post|
+    .userindex__stripe
+    .userindex__text
+      .userindex__text__image 
+        = image_tag post.images.first.image.url(:medium)
+      .userindex__text__title 
+        .userindex__text__title__box
+          = post.title
+        .userindex__text__title__name
+          = post.user.nickname
+          = post.created_at
+        .userindex__text__title__text
+    .userindex__content 
+      = simple_format post.text
+
+
+
+-# .main
+-#   .main__toko
+-#     投稿一覧
+-#   - @posts.each do |post|
+-#     = link_to post_path "#{post.id}", class: "main__show" do
+-#       .main__stripe
+-#       .main__text
+-#         .main__text__image 
+-#           = image_tag @post.images.first.image.url(:medium)
+-#         .main__text__title 
+-#           .main__text__title__box
+-#             = link_to @post.title, post_path(post.id)
+-#           .main__text__title__text
+-#           .main__text__title__name
+-#             = @post.user.nickname
+-#             = @post.created_at
+-# .page 
+  -# = paginate(@posts)
+-# = render '/posts/footer'
