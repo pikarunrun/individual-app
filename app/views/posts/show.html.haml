@@ -21,16 +21,17 @@
       .show__edit--box
   .show__content 
     = simple_format @post.text
-
-.comment__comments
-  <コメント一覧>
-  - if @comments
-    - @comments.each do |comment|
-      = link_to comment.user.nickname
-      = comment.comment
-.comment
-  -# .comment__
-  - if current_user
-    -# = form_for [@post, @comment] do |f| 
-      = f.text_area :comment, class: 'comment__area', placeholder: "コメント", rows: "5"
-      = f.submit "コメントする", class: 'comment__submit' 
+.box
+  .comment__comments
+    - if @comments
+      - @comments.each do |comment|
+        .comment__box
+          .comment__box--name
+            = link_to comment.user.nickname
+          .comment__box--comment
+            = comment.comment
+  .comment
+    - if current_user
+      = form_for [@post, @comment] do |f| 
+        = f.text_area :comment, class: 'comment__area', placeholder: "コメント", rows: "5"
+        = f.submit "コメントする", class: 'comment__submit' 

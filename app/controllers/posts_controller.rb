@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 
+  before_action :move_to_index, except: [:index, :show]
   before_action :set_find,only:[:show, :edit, :update, :destroy]
 
   def index
@@ -13,7 +14,6 @@ class PostsController < ApplicationController
   
   def create
     @post = Post.new(post_params)
-    # @post.image = "default_icon.png"
     if @post.save
       redirect_to root_path
     else 
@@ -24,6 +24,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user)    
   end
 
   def edit
@@ -48,5 +50,9 @@ class PostsController < ApplicationController
 
   def set_find
     @post = Post.find(params[:id])
+  end
+
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
 end
