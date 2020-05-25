@@ -20,13 +20,12 @@ class PostsController < ApplicationController
     else 
       flash[:alert] = "入力してください"
       render "new"
-
     end
   end
 
   def show
     @comment = Comment.new
-    @comments = @post.comments.includes(:user)    
+    @comments = @post.comments.includes(:user_id)    
   end
 
   def edit
