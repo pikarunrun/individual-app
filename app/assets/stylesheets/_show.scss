@@ -120,10 +120,7 @@
         }
       }
       &--comment {
-        // height: 100px;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-bottom: 20px;
+        padding: 20px;
         background-color: #eee;
         width: 400px;
         border-radius: 20px;
@@ -133,9 +130,20 @@
     }
   }
   .comment {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 220px;
+    &__caution {
+      width: 600px;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #ffd;
+      height: 50px;
+    }
     &__area {
       width: 600px;
+      margin-bottom: 10px;
+      padding: 10px;
       input {
       }
     }

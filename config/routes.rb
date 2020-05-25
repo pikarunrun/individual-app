@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
   resources :users, only: :index do
   end
+  resources :parts, only: :index do
+  end
 end

@@ -12,6 +12,11 @@
           = post.user.nickname
           = post.created_at
         .userindex__text__title__text
+    .show__edit
+      .show__edit--edit
+        = link_to '編集', edit_post_path(post.id)
+      .show__edit--des
+        = link_to '削除', post_path(post.id), method: :delete
     .userindex__content 
       = simple_format post.text
 

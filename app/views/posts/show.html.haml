@@ -31,7 +31,9 @@
           .comment__box--comment
             = comment.comment
   .comment
-    - if current_user
+    .comment__caution
+      相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは相手の事を不愉快にしてしまう事があります。そのような言葉言葉は控えてください。
+    - if user_signed_in? 
       = form_for [@post, @comment] do |f| 
         = f.text_area :comment, class: 'comment__area', placeholder: "コメント", rows: "5"
         = f.submit "コメントする", class: 'comment__submit' 

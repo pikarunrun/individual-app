@@ -14,7 +14,7 @@
           .main__text__title__text
           .main__text__title__name
             = post.user.nickname
-            = post.created_at
+            = post.created_at          
 .page 
   = paginate(@posts)
 = render 'footer'
