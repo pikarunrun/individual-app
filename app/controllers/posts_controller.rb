@@ -10,11 +10,12 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @post.images.build
-    @pats = Part.new
+    @post.parts.build
   end
   
   def create
     @post = Post.new(post_params)
+    # binding.pry
     if @post.save
       redirect_to root_path
     else 
@@ -45,7 +46,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :text, images_attributes: [:image]).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :text, images_attributes: [:image], parts_attributes: [:name]).merge(user_id: current_user.id)
   end
 
   def set_find

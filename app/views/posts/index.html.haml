@@ -11,6 +11,7 @@
         .main__text__title 
           .main__text__title__box
             = link_to post.title, post_path(post.id)
+            = post.parts.first.name
           .main__text__title__text
           .main__text__title__name
             = post.user.nickname

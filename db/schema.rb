@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200523054039) do
+ActiveRecord::Schema.define(version: 20200524074259) do
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "text",       limit: 65535
@@ -32,8 +32,10 @@ ActiveRecord::Schema.define(version: 20200523054039) do
 
   create_table "parts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "name",       limit: 65535, null: false
+    t.integer  "post_id",                  null: false
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.index ["post_id"], name: "index_parts_on_post_id", using: :btree
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -67,5 +69,6 @@ ActiveRecord::Schema.define(version: 20200523054039) do
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
   add_foreign_key "images", "posts"
+  add_foreign_key "parts", "posts"
   add_foreign_key "posts", "users"
 end
