@@ -7,4 +7,5 @@ class Post < ApplicationRecord
   accepts_nested_attributes_for :parts, allow_destroy: true
 
   validates :title, :text, presence: true
+
 end
