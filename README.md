@@ -1,21 +1,39 @@
 # README
 
-## アプリ名
+# アプリ名
 筋トレ好きよ集まれ💪
 
-## このアプリで出来ること
+# このアプリで出来ること
+ユーザー登録
+画像、部位を選んでの投稿機能
+コメント機能
 
-## 本盤環境
+# 本盤環境
+https://individual-meapp.herokuapp.com/
 
-## このアプリを作った意味
+テストアカウント
+Nickname test
+Email test@test
+Password 000000
+Password confirmation 000000
 
-## 工夫したポイント
+# このアプリを作った意味
+筋力トレーニングをしている方の情報共有アプリケーションです。私は筋力トレーニングを始めた際には何からやればいいや、どの種目をやればいいかなどわからない
+ことが多く、その時にこのようなトレーニング種目の共有アプリケーションがあれば、こういうのをやったらいいんだなどとわかります。
+上記のことからこの情報共有アプリケーションを作成致しました。
 
-## 使用技術(開発環境)
+# 使用技術(開発環境)
+macOS Catalina10.15.4
+Ruby
+Rails 5.0.7.2
+Heroku
+Haml/Sass
 
-## 課題や今後実装したい機能
+# 課題や今後実装したい機能
+検索機能の実装をし、投稿の題名や部位に関するワードの一覧を表示させる機能
+コメント機能の非同期通信
 
-## ER図 
+# ER図 
 
 ## DB設計
  Individual-app DB設計
@@ -29,54 +47,41 @@
 - has_many :posts
 - has_many :comments
 - has_many :parts
-- has_many :images
-- has_many :types
 
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image|text||
-|text|text||
-|user_id|integer|null: false, foreign_key: true|
+|text|title||null: false|
+|text|text|||null: false|
+|user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - has_many :comments
+- has_many :images
+- has_many :parts
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|tweet_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|post|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :tweet
+- belongs_to :post
 - belongs_to :user
 
-## typesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|email|string|null: false|
-|password|string|null: false|
-|nickname|string|null: false|
-### Association
-- has_many :posts
-- bilongs_to :user
 ## partsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image|text||
-|text|text||
-|user_id|integer|null: false, foreign_key: true|
+|text|name|null: false|
+|post|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :user
-- has_many :posts
+- belongs_to :posts
 
 ## imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|tweet_id|integer|null: false, foreign_key: true|
+|string|image|null: false|
+|post|references|null: false, foreign_key: true|
 ### Association
-- has_many :posts
-- belongs_to :user
+- belongs_to :post
