@@ -6,9 +6,19 @@
 # このアプリで出来ること
 ユーザー登録
 <br>
+https://gyazo.com/c475f510c085f416117138c089b3f38d
+<br>
+<br>
 画像、部位を選んでの投稿機能
 <br>
+https://gyazo.com/2f7f824e7c767966b7d1c208977e8bca
+<br>
+<br>
 コメント機能
+<br>
+https://gyazo.com/bc8491af36d3c2c4869a2ab580b04051
+
+
 
 # 本盤環境
 https://individual-meapp.herokuapp.com/
