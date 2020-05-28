@@ -18,6 +18,13 @@ https://gyazo.com/2f7f824e7c767966b7d1c208977e8bca
 <br>
 https://gyazo.com/bc8491af36d3c2c4869a2ab580b04051
 
+投稿一覧
+<br>
+https://gyazo.com/a4ab77955956608c05d43b29681012c5
+<br>
+投稿が4つ以上になると次のページへ遷移してみることができる
+<br>
+https://gyazo.com/c1be305a7983f5a7518b5d2281e83e3b
 
 
 # 本盤環境
