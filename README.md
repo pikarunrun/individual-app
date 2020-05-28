@@ -5,7 +5,9 @@
 
 # このアプリで出来ること
 ユーザー登録
+<br>
 画像、部位を選んでの投稿機能
+<br>
 コメント機能
 
 # 本盤環境
@@ -13,8 +15,11 @@ https://individual-meapp.herokuapp.com/
 
 テストアカウント
 Nickname test
+<br>
 Email test@test
+<br>
 Password 000000
+<br>
 Password confirmation 000000
 
 # このアプリを作った意味
@@ -24,13 +29,18 @@ Password confirmation 000000
 
 # 使用技術(開発環境)
 macOS Catalina10.15.4
+<br>
 Ruby
+<br>
 Rails 5.0.7.2
+<br>
 Heroku
+<br>
 Haml/Sass
 
 # 課題や今後実装したい機能
 検索機能の実装をし、投稿の題名や部位に関するワードの一覧を表示させる機能
+<br>
 コメント機能の非同期通信
 
 # ER図 
