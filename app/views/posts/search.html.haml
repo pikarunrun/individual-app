@@ -1,0 +1,38 @@
+-# .login
+-#   .login__box 
+-#     = link_to "筋肉に好きよ集まれ💪", root_path
+-#   .login__search
+-#    = form_for search_posts_path, method: :get do |f|
+-#     = f.text_field :keyword, placeholder: "キーワードから探す", class: "login__main__inner__key__search"
+-#     = f.submit "検索", class: "login__main__inner__key__submit"
+-#     .login__box__main
+-#       .login__box__main--left
+-#         = link_to "新規投稿", new_post_path
+-#       .login__box__main--center
+-#         = link_to users_path do
+-#           = current_user.nickname
+-#       .login__box__main--right
+-#         = link_to "ログアウト", destroy_user_session_path, method: :delete
+
+-# .main
+-#   .main__toko
+-#     投稿一覧
+-#   - @posts.each do |post|
+-#     = link_to post_path "#{post.id}", class: "main__show" do
+-#       .main__stripe
+-#       .main__text
+-#         .main__text__image 
+-#           = image_tag post.images.first.image.url(:medium)
+-#         .main__text__title 
+-#           .main__text__title__box
+-#             = link_to post.title, post_path(post.id)
+-#           .main__text__title__part
+-#             部位
+-#             = post.parts.first.name 
+-#           .main__text__title__text
+-#           .main__text__title__name
+-#             = post.user.nickname
+-#             = post.created_at          
+-# .page 
+-#   = paginate(@posts)
+-# = render 'footer'

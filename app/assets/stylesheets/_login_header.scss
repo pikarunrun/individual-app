@@ -28,6 +28,9 @@
         font-size: 22px;
         position: absolute;
         right: 180px;
+        a {
+          padding-right: 18px;
+        }
       }
       &--right {
         top: 50px;
@@ -36,5 +39,12 @@
         right: 60px;
       }
     }
+  }
+}
+
+.search {
+  &__box {
+    height: 50px;
+    background: #eee;
   }
 }

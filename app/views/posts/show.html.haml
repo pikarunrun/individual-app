@@ -7,6 +7,9 @@
     .show__text__title 
       .show__text__title__box
         = @post.title
+      .show__text__title__part
+        部位
+        = @post.parts.first.name
       .show__text__title__name
         = @post.user.nickname
         = @post.created_at

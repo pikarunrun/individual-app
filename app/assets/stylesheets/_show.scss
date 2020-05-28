@@ -41,6 +41,9 @@
   &__box {
     font-size: 24px;
   }
+  &__part {
+    font-size: 18px;
+  }
   &__text {
     font-size: 14px;
   }
@@ -143,9 +146,7 @@
     &__area {
       width: 600px;
       margin-bottom: 10px;
-      padding: 10px;
-      input {
-      }
+      padding: 10px
     }
     &__submit {
       width: 600px;
