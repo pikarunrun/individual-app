@@ -28,10 +28,11 @@ https://gyazo.com/a4ab77955956608c05d43b29681012c5
 https://gyazo.com/c1be305a7983f5a7518b5d2281e83e3b
 
 
-# 本盤環境
+# 本番環境
 https://individual-meapp.herokuapp.com/
 
 テストアカウント
+<br>
 Nickname test
 <br>
 Email test@test
