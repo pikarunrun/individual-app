@@ -15,7 +15,7 @@
 <br>
 ユーザー登録
 <br>
-<img src="https://i.gyazo.com/51aa511684126e9ba4cff944362fb84f.png">
+<img src="https://i.gyazo.com/51aa511684126e9ba4cff944362fb84f.png">
 <br>
 <br>
 画像、部位を選んでの投稿機能
