@@ -75,7 +75,7 @@ Haml/Sass
 コメント機能の非同期通信
 
 # ER図 
-<img src="https://i.gyazo.com/83aaca1b27d91e278f8bc57f7e93c876.png">
+<img src="https://i.gyazo.com/465fd416b9b760c6050912fdf2f2f4f4.png">
 <br>
 
 ## DB設計
