@@ -9,8 +9,6 @@
         .main__text__image 
           - if post.images.present?
             = image_tag post.images.first.image.url(:medium)
-          - else
-            = image_tag 
         .main__text__title 
           .main__text__title__box
             = link_to post.title, post_path(post.id)
