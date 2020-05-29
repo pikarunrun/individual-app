@@ -26,7 +26,7 @@
 <br>
 コメント機能
 <br>
-<img src="">
+<img src="https://i.gyazo.com/6565ff0635293c096737f2fef0d18138.png">
 <br>
 投稿一覧
 <br>
