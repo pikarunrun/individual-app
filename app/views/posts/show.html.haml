@@ -36,7 +36,7 @@
             = comment.text
   .comment
     .comment__caution
-      相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは相手の事を不愉快にしてしまう事があります。そのような言葉言葉は控えてください。
+      相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは相手の事を不愉快にしてしまう事があります。そのような言葉は控えてください。
     - if user_signed_in? 
       = form_for [@post, @comment] do |f| 
         = f.text_area :text, class: 'comment__area', placeholder: "コメント", rows: "5"
