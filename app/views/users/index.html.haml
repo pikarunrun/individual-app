@@ -3,8 +3,9 @@
   - @posts.each do |post|
     .userindex__stripe
     .userindex__text
-      .userindex__text__image 
-        = image_tag post.images.first.image.url(:medium)
+      .userindex__text__image
+        - if post.images.present?
+          = image_tag post.images.first.image.url(:medium)
       .userindex__text__title 
         .userindex__text__title__box
           = post.title
