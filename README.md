@@ -6,26 +6,26 @@
 # このアプリで出来ること
 ユーザー登録
 <br>
-https://gyazo.com/c475f510c085f416117138c089b3f38d
+[![Image from Gyazo](https://i.gyazo.com/34383a22d647a66f2331a26c13073fa6.png)](https://gyazo.com/34383a22d647a66f2331a26c13073fa6)
 <br>
 <br>
 画像、部位を選んでの投稿機能
 <br>
-https://gyazo.com/2f7f824e7c767966b7d1c208977e8bca
+[![Image from Gyazo](https://i.gyazo.com/66b21394aca60511071369d2b789eec8.png)](https://gyazo.com/66b21394aca60511071369d2b789eec8)
 <br>
 <br>
 コメント機能
 <br>
-https://gyazo.com/bc8491af36d3c2c4869a2ab580b04051
-
+[![Image from Gyazo](https://i.gyazo.com/91b10379b7a9a1944ae8175aefc45ade.png)](https://gyazo.com/91b10379b7a9a1944ae8175aefc45ade)
 投稿一覧
 <br>
-https://gyazo.com/a4ab77955956608c05d43b29681012c5
+[![Image from Gyazo](https://i.gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64.png)](https://gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64)
 <br>
 投稿が4つ以上になると次のページへ遷移してみることができる
 <br>
+[![Image from Gyazo](https://i.gyazo.com/698859ada9976406f6904a5d54cc1f35.png)](https://gyazo.com/698859ada9976406f6904a5d54cc1f35)
 <br>
-https://gyazo.com/c1be305a7983f5a7518b5d2281e83e3b
+
 
 
 # 本番環境
