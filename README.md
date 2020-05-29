@@ -17,6 +17,7 @@
 <br>
 <img src="https://i.gyazo.com/51aa511684126e9ba4cff944362fb84f.png">
 <br>
+<img src="https://i.gyazo.com/05d999afee0619f63518f379755d8d6b.png">
 <br>
 画像、部位を選んでの投稿機能
 <br>
@@ -25,17 +26,17 @@
 <br>
 コメント機能
 <br>
-[![Image from Gyazo](https://i.gyazo.com/91b10379b7a9a1944ae8175aefc45ade.png)](https://gyazo.com/91b10379b7a9a1944ae8175aefc45ade)
+<img src="">
 <br>
 投稿一覧
 <br>
-[![Image from Gyazo](https://i.gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64.png)](https://gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64)
+<img src="https://i.gyazo.com/7db2ec3afc58940536c7ce4fd39ee9bb.jpg">
 <br>
 <br>
 投稿が4つ以上になると次のページへ遷移してみることができる
 <br>
 <br>
-[![Image from Gyazo](https://i.gyazo.com/698859ada9976406f6904a5d54cc1f35.png)](https://gyazo.com/698859ada9976406f6904a5d54cc1f35)
+<img src="https://i.gyazo.com/de0cfc247dc92baefa725472604b273d.png">
 <br>
 
 
