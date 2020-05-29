@@ -15,12 +15,12 @@
 <br>
 ユーザー登録
 <br>
-<img src="https://i.gyazo.com/f0fb0e9a11d1ed97bb26178db9118aab.png">
+<img src="https://i.gyazo.com/51aa511684126e9ba4cff944362fb84f.png">
 <br>
 <br>
 画像、部位を選んでの投稿機能
 <br>
-[![Image from Gyazo](https://i.gyazo.com/66b21394aca60511071369d2b789eec8.png)](https://gyazo.com/66b21394aca60511071369d2b789eec8)
+<img src="https://i.gyazo.com/1ae0596cb8572abf83bbb176364f0c3d.png">
 <br>
 <br>
 コメント機能
