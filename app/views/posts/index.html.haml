@@ -7,7 +7,10 @@
       .main__stripe
       .main__text
         .main__text__image 
-          = image_tag post.images.first.image.url(:medium)
+          - if post.images.present?
+            = image_tag post.images.first.image.url(:medium)
+          - else
+            = image_tag 
         .main__text__title 
           .main__text__title__box
             = link_to post.title, post_path(post.id)
@@ -17,7 +20,7 @@
           .main__text__title__text
           .main__text__title__name
             = post.user.nickname
-            = post.created_at          
+            = post.created_at 
 .page 
   = paginate(@posts)
 = render 'footer'

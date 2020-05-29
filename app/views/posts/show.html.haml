@@ -3,7 +3,8 @@
   .show__stripe
   .show__text
     .show__text__image 
-      = image_tag @post.images.first.image.url(:medium)
+      - if @post.images.present?
+        = image_tag @post.images.first.image.url(:medium)
     .show__text__title 
       .show__text__title__box
         = @post.title

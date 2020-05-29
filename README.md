@@ -17,11 +17,14 @@
 コメント機能
 <br>
 [![Image from Gyazo](https://i.gyazo.com/91b10379b7a9a1944ae8175aefc45ade.png)](https://gyazo.com/91b10379b7a9a1944ae8175aefc45ade)
+<br>
 投稿一覧
 <br>
 [![Image from Gyazo](https://i.gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64.png)](https://gyazo.com/3b9839b5e9912f6cc2222c87ff6e5d64)
 <br>
+<br>
 投稿が4つ以上になると次のページへ遷移してみることができる
+<br>
 <br>
 [![Image from Gyazo](https://i.gyazo.com/698859ada9976406f6904a5d54cc1f35.png)](https://gyazo.com/698859ada9976406f6904a5d54cc1f35)
 <br>
