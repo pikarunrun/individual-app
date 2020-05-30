@@ -8,8 +8,9 @@
         .new__box-big--text 
           = icon("fa", "camera")
           = i.file_field :image, id: :user_image
-    = f.fields_for :parts do |i|
-      = i.select :name,[["腕","腕"],["脚","脚"],["肩","肩"],["背中","背中"],["お尻","お尻"],["腹筋","腹筋"],["全身","全身"],["その他","その他"]]   
+    .new__box-big--part
+      = f.fields_for :parts do |i|
+        = i.select :name,[["腕","腕"],["脚","脚"],["肩","肩"],["背中","背中"],["お尻","お尻"],["腹筋","腹筋"],["全身","全身"],["その他","その他"]]   
     = f.text_field :title, class: 'new__box-big-title', placeholder: "タイトル"
     = f.text_area :text, class: 'new__box-big-area', placeholder: "ブログの本文", rows: 10
     = f.submit '投稿する', class: 'new__box-big-submit' 

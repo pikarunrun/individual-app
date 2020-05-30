@@ -1,6 +1,7 @@
 .new {
-  background-color: gray;
-  color: #ffffff;
+  border: solid 2px black;
+  background-color: #ffe;
+  color: black;
   line-height: 2;
   position: relative;
   margin: 50px 280px;
@@ -17,9 +18,10 @@
   &__box {
     &-big {
       &--text {
+        border: solid 1px black;
         display: flex;
         .fa {
-          color: gray;
+          color: black;
           font-size: 30px;
           position: absolute;
           margin-left: 400px;
@@ -41,9 +43,11 @@
           width: 850px;
         }
       }
-      .select {
-        height: 50px;
-        width: 100px;
+      &--part {
+        select {
+          margin-top: 30px;
+          height: 50px;
+        }
       }
       &-title {
         height: 70px;
@@ -68,6 +72,7 @@
         height: 40px;
         line-height: 40px;
         margin: 16px auto;
+        border: solid 2px black;
       }
     }
   }
