@@ -9,6 +9,8 @@
         .main__text__image 
           - if post.images.present?
             = image_tag post.images.first.image.url(:medium)
+          - else 
+            %img{src: "https://i.gyazo.com/2b858b92bc7766cd610947f90a935b6d.png"}/
         .main__text__title 
           .main__text__title__box
             = link_to post.title, post_path(post.id)
