@@ -23,7 +23,7 @@
 <br>
 画像、部位を選んでの投稿機能
 <br>
-<img src="https://i.gyazo.com/1ae0596cb8572abf83bbb176364f0c3d.png">
+<img src="https://i.gyazo.com/4cfd8c20b5352f19718644220ff2efee.png">
 <br>
 <br>
 コメント機能
